@@ -15,6 +15,10 @@ a {
   color: #fff;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul li {
   list-style: none;
 }
@@ -30,7 +34,6 @@ h1 {
 
 .header {
   display: flex;
-  /* background-color: aqua; */
   justify-content: space-between;
   align-items: center;
   padding: 20px 25px;
@@ -55,24 +58,23 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 6px;
 }
 nav ul li a {
   text-decoration: none;
 }
-nav ul li a:hover {
+a:hover {
   text-decoration: underline;
 }
 
 /* Style main */
 
 .main {
-  /* background-color: brown; */
   max-width: 750px;
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 50px;
+
   padding: 20px;
+  height: 70vh;
 }
 
 .main h1 {
@@ -86,7 +88,7 @@ nav ul li a:hover {
   background-color: #575757;
   width: 100%;
   border-radius: 30px;
-  padding: 15px 10px;
+  padding: 8px 10px;
   margin-top: 15px;
 }
 .search-icons {
@@ -95,10 +97,69 @@ nav ul li a:hover {
   align-items: center;
   padding: 0 6px;
   justify-content: space-between;
-  /* justify-content: center; */
 }
 
 .search-icons input {
   background-color: transparent;
-  width: 70%;
+  width: 85%;
+  padding: 10px 5px;
+  outline: none;
+  border: none;
+  color: #dbdbdb;
+  font-size: 1rem;
+}
+
+.search-icons .icons {
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.search-icons .icons img {
+  margin-right: 2px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btns button {
+  background-color: #575757;
+  padding: 10px 10px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  color: #dbdbdb;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
+
+.btns button:hover {
+  background-color: #6b6a6a;
+}
+
+.btns #btn-left {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #3e3b3b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+footer div > ul {
+  display: flex;
+  align-items: center;
+}
+
+footer div > ul li {
+  margin-right: 15px;
 }
