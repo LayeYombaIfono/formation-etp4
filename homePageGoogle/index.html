@@ -1,90 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page d'acceuil Google</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header" id="header">
       <div class="left"></div>
-      <div class="rigth">
-        <nav>
-          <ul>
-            <li>
-              <a href="">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 48 48"
-                  width="48px"
-                  height="48px"
-                >
-                  <path
-                    fill="#4caf50"
-                    d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"
-                  />
-                  <path
-                    fill="#1e88e5"
-                    d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"
-                  />
-                  <polygon
-                    fill="#e53935"
-                    points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"
-                  />
-                  <path
-                    fill="#c62828"
-                    d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"
-                  />
-                  <path
-                    fill="#fbc02d"
-                    d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"
-                  />
-                </svg>
-                Gmail</a
+
+      <nav>
+        <ul>
+          <li>
+            <a href="" target="_blank">
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                width="20px"
+                height="20px"
               >
-            </li>
-            <li><a href="#"> Images </a></li>
-            <li>
-              <img
+                <path
+                  fill="#4caf50"
+                  d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"
+                />
+                <path
+                  fill="#1e88e5"
+                  d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"
+                />
+                <polygon
+                  fill="#e53935"
+                  points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"
+                />
+                <path
+                  fill="#c62828"
+                  d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"
+                />
+                <path
+                  fill="#fbc02d"
+                  d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"
+                />
+              </svg> -->
+              Gmail</a
+            >
+          </li>
+          <li><a href="#"> Images </a></li>
+          <li>
+            <a href="">
+              <!-- <img
                 src="./assets/images/application.png"
                 alt="Application"
                 title="Applications"
-              />
-              <a href="">Application</a>
-            </li>
-            <li>
-              <a href="">
-                <img
-                  src="./assets/images/compte.png"
-                  alt="Profile"
-                  title="Compte google"
-                />
-                Profile</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+                width="15px"
+                height="15px"
+              /> -->
+              Application</a
+            >
+          </li>
+          <li>
+            <a href="">
+              <!-- <img
+                src="./assets/images/compte.png"
+                alt="Profile"
+                title="Compte google"
+              /> -->
+              Profile</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- content -->
     <main class="main" id="main">
       <h1>Google</h1>
-      <div class="logo"></div>
-      <img src="./assets/images/chercher.png" alt="search" />
+      <!-- <div class="logo"></div> -->
       <div class="search">
-        <input type="search" />
-        <img
-          src="./assets/images/microphone.png"
-          alt="microphone"
-          title="Uitilser la recherche vocale"
-        />
-        <img
-          src="./assets/images/appareil-photo.png"
-          alt="appareil-photo"
-          title="Rechercher par image"
-        />
+        <div class="search-icons">
+          <img src="./assets/images/chercher.png" alt="search" />
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Recherche"
+          />
+          <div class="icons">
+            <img
+              src="./assets/images/microphone.png"
+              alt="microphone"
+              title="Uitilser la recherche vocale"
+            />
+            <img
+              src="./assets/images/appareil-photo.png"
+              alt="appareil-photo"
+              title="Rechercher par image"
+            />
+          </div>
+        </div>
       </div>
       <div class="btns">
         <button type="button" id="btn-right">Recherche Google</button>
@@ -94,6 +107,7 @@
 
     <!-- footer -->
     <footer>
+      <!-- About -->
       <div class="about">
         <ul>
           <li><a href="#">A propos</a></li>
